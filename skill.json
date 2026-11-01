@@ -1,0 +1,26 @@
+{
+  "name": "genpark-personal-agent-cold-pressor-pain-endurance-skill",
+  "version": "1.0.0",
+  "description": "Quantifies Cold Pressor Test (CPT) pain threshold, tolerance latency, central pain gating, and post-stress vagal reactivation recovery kinetics.",
+  "tools": [
+    {
+      "name": "evaluate_cpt_pain_tolerance",
+      "description": "Evaluates cold pressor pain threshold, tolerance latency, PSI index, and central pain gating.",
+      "parameters": {
+        "water_temp_celsius": "float (default 3.0)",
+        "pain_threshold_seconds": "float (default 18.0)",
+        "pain_tolerance_seconds": "float (default 75.0)",
+        "subjective_pain_vas_10": "float (default 7.5)"
+      }
+    },
+    {
+      "name": "model_autonomic_recovery_kinetics",
+      "description": "Models post-stress vagal reactivation velocity and heart rate recovery kinetics.",
+      "parameters": {
+        "peak_hr_bpm": "float (default 125.0)",
+        "recovery_hr_1min_bpm": "float (default 95.0)",
+        "recovery_hr_2min_bpm": "float (default 80.0)"
+      }
+    }
+  ]
+}
